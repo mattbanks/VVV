@@ -312,6 +312,7 @@ echo " * Copied /srv/config/memcached-config/memcached.conf   to /etc/memcached.
 # Copy custom dotfiles and bin file for the vagrant user from local
 cp /srv/config/bash_profile /home/vagrant/.bash_profile
 cp /srv/config/bash_aliases /home/vagrant/.bash_aliases
+cp /srv/config/bash_prompt /home/vagrant/.bash_prompt
 cp /srv/config/vimrc /home/vagrant/.vimrc
 if [[ ! -d /home/vagrant/.subversion ]]; then
 	mkdir /home/vagrant/.subversion
@@ -322,11 +323,20 @@ if [[ ! -d /home/vagrant/bin ]]; then
 fi
 rsync -rvzh --delete /srv/config/homebin/ /home/vagrant/bin/
 
+<<<<<<< HEAD
 echo " * Copied /srv/config/bash_profile                      to /home/vagrant/.bash_profile"
 echo " * Copied /srv/config/bash_aliases                      to /home/vagrant/.bash_aliases"
 echo " * Copied /srv/config/vimrc                             to /home/vagrant/.vimrc"
 echo " * Copied /srv/config/subversion-servers                to /home/vagrant/.subversion/servers"
 echo " * rsync'd /srv/config/homebin                          to /home/vagrant/bin"
+=======
+echo " * /srv/config/bash_profile                      -> /home/vagrant/.bash_profile"
+echo " * /srv/config/bash_aliases                      -> /home/vagrant/.bash_aliases"
+echo " * /srv/config/bash_prompt                       -> /home/vagrant/.bash_prompt"
+echo " * /srv/config/vimrc                             -> /home/vagrant/.vimrc"
+echo " * /srv/config/subversion-servers                -> /home/vagrant/.subversion/servers"
+echo " * /srv/config/homebin                           -> /home/vagrant/bin"
+>>>>>>> allow custom bash prompt
 
 # If a bash_prompt file exists in the VVV config/ directory, copy to the VM.
 if [[ -f /srv/config/bash_prompt ]]; then

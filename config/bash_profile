@@ -34,7 +34,7 @@ export WP_TESTS_DIR=/srv/www/wordpress-develop/tests/phpunit/
 eval "$(grunt --completion=bash)"
 
 # add autocomplete for wp-cli
-source /srv/www/wp-cli/utils/wp-completion.bash
+. /srv/www/wp-cli/utils/wp-completion.bash
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob

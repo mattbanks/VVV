@@ -312,7 +312,6 @@ echo " * Copied /srv/config/memcached-config/memcached.conf   to /etc/memcached.
 # Copy custom dotfiles and bin file for the vagrant user from local
 cp /srv/config/bash_profile /home/vagrant/.bash_profile
 cp /srv/config/bash_aliases /home/vagrant/.bash_aliases
-cp /srv/config/bash_prompt /home/vagrant/.bash_prompt
 cp /srv/config/vimrc /home/vagrant/.vimrc
 if [[ ! -d /home/vagrant/.subversion ]]; then
 	mkdir /home/vagrant/.subversion
@@ -332,7 +331,6 @@ echo " * rsync'd /srv/config/homebin                          to /home/vagrant/b
 =======
 echo " * /srv/config/bash_profile                      -> /home/vagrant/.bash_profile"
 echo " * /srv/config/bash_aliases                      -> /home/vagrant/.bash_aliases"
-echo " * /srv/config/bash_prompt                       -> /home/vagrant/.bash_prompt"
 echo " * /srv/config/vimrc                             -> /home/vagrant/.vimrc"
 echo " * /srv/config/subversion-servers                -> /home/vagrant/.subversion/servers"
 echo " * /srv/config/homebin                           -> /home/vagrant/bin"
@@ -515,7 +513,10 @@ if ( isset( \$_SERVER['HTTP_HOST'] ) && preg_match('/^(local.wordpress.)\d{1,3}\
 
 define( 'WP_DEBUG', true );
 PHP
+<<<<<<< HEAD
 		echo "Installing WordPress Stable..."
+=======
+>>>>>>> update based on latest vvv master
 		wp core install --url=local.wordpress.dev --quiet --title="Local WordPress Dev" --admin_name=admin --admin_email="admin@local.dev" --admin_password="password"
 	else
 		echo "Updating WordPress Stable..."
@@ -547,7 +548,10 @@ if ( isset( \$_SERVER['HTTP_HOST'] ) && preg_match('/^(local.wordpress-trunk.)\d
 
 define( 'WP_DEBUG', true );
 PHP
+<<<<<<< HEAD
 		echo "Installing WordPress trunk..."
+=======
+>>>>>>> update based on latest vvv master
 		wp core install --url=local.wordpress-trunk.dev --quiet --title="Local WordPress Trunk Dev" --admin_name=admin --admin_email="admin@local.dev" --admin_password="password"
 	else
 		echo "Updating WordPress trunk..."
@@ -574,7 +578,10 @@ if ( isset( \$_SERVER['HTTP_HOST'] ) && preg_match('/^(src|build)(.wordpress-dev
 
 define( 'WP_DEBUG', true );
 PHP
+<<<<<<< HEAD
 		echo "Installing WordPress develop..."
+=======
+>>>>>>> update based on latest vvv master
 		wp core install --url=src.wordpress-develop.dev --quiet --title="WordPress Develop" --admin_name=admin --admin_email="admin@local.dev" --admin_password="password"
 		cp /srv/config/wordpress-config/wp-tests-config.php /srv/www/wordpress-develop/
 		cd /srv/www/wordpress-develop/

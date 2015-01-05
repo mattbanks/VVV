@@ -322,19 +322,11 @@ if [[ ! -d /home/vagrant/bin ]]; then
 fi
 rsync -rvzh --delete /srv/config/homebin/ /home/vagrant/bin/
 
-<<<<<<< HEAD
 echo " * Copied /srv/config/bash_profile                      to /home/vagrant/.bash_profile"
 echo " * Copied /srv/config/bash_aliases                      to /home/vagrant/.bash_aliases"
 echo " * Copied /srv/config/vimrc                             to /home/vagrant/.vimrc"
 echo " * Copied /srv/config/subversion-servers                to /home/vagrant/.subversion/servers"
 echo " * rsync'd /srv/config/homebin                          to /home/vagrant/bin"
-=======
-echo " * /srv/config/bash_profile                      -> /home/vagrant/.bash_profile"
-echo " * /srv/config/bash_aliases                      -> /home/vagrant/.bash_aliases"
-echo " * /srv/config/vimrc                             -> /home/vagrant/.vimrc"
-echo " * /srv/config/subversion-servers                -> /home/vagrant/.subversion/servers"
-echo " * /srv/config/homebin                           -> /home/vagrant/bin"
->>>>>>> allow custom bash prompt
 
 # If a bash_prompt file exists in the VVV config/ directory, copy to the VM.
 if [[ -f /srv/config/bash_prompt ]]; then
@@ -351,13 +343,10 @@ service memcached restart
 
 # Disable PHP Xdebug module by default
 php5dismod xdebug
-<<<<<<< HEAD
 
 # Enable PHP mcrypt module by default
 php5enmod mcrypt
 
-=======
->>>>>>> integrated latest VVV changes
 service php5-fpm restart
 
 # If MySQL is installed, go through the various imports and service tasks.
@@ -516,14 +505,7 @@ if ( isset( \$_SERVER['HTTP_HOST'] ) && preg_match('/^(local.wordpress.)\d{1,3}\
 
 define( 'WP_DEBUG', true );
 PHP
-<<<<<<< HEAD
-<<<<<<< HEAD
 		echo "Installing WordPress Stable..."
-=======
->>>>>>> update based on latest vvv master
-=======
-		echo "Installing WordPress Stable..."
->>>>>>> integrated latest VVV changes
 		wp core install --url=local.wordpress.dev --quiet --title="Local WordPress Dev" --admin_name=admin --admin_email="admin@local.dev" --admin_password="password"
 	else
 		echo "Updating WordPress Stable..."
@@ -555,14 +537,7 @@ if ( isset( \$_SERVER['HTTP_HOST'] ) && preg_match('/^(local.wordpress-trunk.)\d
 
 define( 'WP_DEBUG', true );
 PHP
-<<<<<<< HEAD
-<<<<<<< HEAD
 		echo "Installing WordPress trunk..."
-=======
->>>>>>> update based on latest vvv master
-=======
-		echo "Installing WordPress trunk..."
->>>>>>> integrated latest VVV changes
 		wp core install --url=local.wordpress-trunk.dev --quiet --title="Local WordPress Trunk Dev" --admin_name=admin --admin_email="admin@local.dev" --admin_password="password"
 	else
 		echo "Updating WordPress trunk..."
@@ -589,14 +564,7 @@ if ( isset( \$_SERVER['HTTP_HOST'] ) && preg_match('/^(src|build)(.wordpress-dev
 
 define( 'WP_DEBUG', true );
 PHP
-<<<<<<< HEAD
-<<<<<<< HEAD
 		echo "Installing WordPress develop..."
-=======
->>>>>>> update based on latest vvv master
-=======
-		echo "Installing WordPress develop..."
->>>>>>> integrated latest VVV changes
 		wp core install --url=src.wordpress-develop.dev --quiet --title="WordPress Develop" --admin_name=admin --admin_email="admin@local.dev" --admin_password="password"
 		cp /srv/config/wordpress-config/wp-tests-config.php /srv/www/wordpress-develop/
 		cd /srv/www/wordpress-develop/

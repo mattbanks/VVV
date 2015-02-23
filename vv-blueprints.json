@@ -1,0 +1,49 @@
+{
+    "base": {
+        "themes": [
+          "mattbanks/WordPress-Starter-Theme"
+        ],
+        "mu_plugins": [
+          "https://github.com/WebDevStudios/WDS-Required-Plugins.git"
+        ],
+        "plugins": [
+          "custom-field-suite",
+          "cfs-options-screens",
+          "google-analytics-for-wordpress",
+          "wordpress-seo",
+          "hierarchy"
+        ],
+        "options": [
+          "blogdescription::''",
+          "start_of_week::0",
+          "timezone_string::'America/New_York'"
+        ],
+        "defines": [
+          "WP_DEBUG::true"
+        ]
+    },
+
+    "genesis": {
+        "themes": [
+            "mattbanks/Genesis-Starter-Child-Theme"
+        ],
+        "mu_plugins": [
+            "https://github.com/WebDevStudios/WDS-Required-Plugins.git"
+        ],
+        "plugins": [
+            "custom-field-suite",
+            "cfs-options-screens",
+            "google-analytics-for-wordpress",
+            "wordpress-seo",
+            "hierarchy"
+        ],
+        "options": [
+            "blogdescription::''",
+            "start_of_week::0",
+            "timezone_string::'America/New_York'"
+        ],
+        "defines": [
+            "WP_DEBUG::true"
+        ]
+    }
+}

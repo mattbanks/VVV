@@ -1,49 +1,93 @@
 {
-    "base": {
-        "themes": [
-          "mattbanks/WordPress-Starter-Theme"
-        ],
-        "mu_plugins": [
-          "https://github.com/WebDevStudios/WDS-Required-Plugins.git"
-        ],
-        "plugins": [
-          "custom-field-suite",
-          "cfs-options-screens",
-          "google-analytics-for-wordpress",
-          "wordpress-seo",
-          "hierarchy"
-        ],
-        "options": [
-          "blogdescription::''",
-          "start_of_week::0",
-          "timezone_string::'America/New_York'"
-        ],
-        "defines": [
-          "WP_DEBUG::true"
-        ]
-    },
+  "base": {
+    "themes": [
+      {
+        "location": "mattbanks/WordPress-Starter-Theme",
+        "activate": false
+      }
+    ],
+    "plugins": [
+      {
+        "location": "custom-field-suite",
+        "version": null,
+        "force": false,
+        "activate": true,
+        "activate_network": false
+      },
+      {
+        "location": "cfs-options-screens",
+        "version": null,
+        "force": false,
+        "activate": true,
+        "activate_network": false
+      },
+      {
+        "location": "google-analytics-for-wordpress",
+        "version": null,
+        "force": false,
+        "activate": true,
+        "activate_network": false
+      },
+      {
+        "location": "wordpress-seo",
+        "version": null,
+        "force": false,
+        "activate": true,
+        "activate_network": false
+      },
+    ],
+    "options": [
+      "blogdescription::''",
+      "timezone_string::'America/New_York'"
+    ],
+    "defines": [
+      "WP_DEBUG::true"
+    ]
+  },
 
-    "genesis": {
-        "themes": [
-            "mattbanks/Genesis-Starter-Child-Theme"
-        ],
-        "mu_plugins": [
-            "https://github.com/WebDevStudios/WDS-Required-Plugins.git"
-        ],
-        "plugins": [
-            "custom-field-suite",
-            "cfs-options-screens",
-            "google-analytics-for-wordpress",
-            "wordpress-seo",
-            "hierarchy"
-        ],
-        "options": [
-            "blogdescription::''",
-            "start_of_week::0",
-            "timezone_string::'America/New_York'"
-        ],
-        "defines": [
-            "WP_DEBUG::true"
-        ]
-    }
+  "genesis": {
+    "themes": [
+      {
+        "location": "mattbanks/Genesis-Starter-Child-Theme",
+        "activate": false
+      }
+    ],
+    "plugins": [
+      {
+        "location": "custom-field-suite",
+        "version": null,
+        "force": false,
+        "activate": true,
+        "activate_network": false
+      },
+      {
+        "location": "cfs-options-screens",
+        "version": null,
+        "force": false,
+        "activate": true,
+        "activate_network": false
+      },
+      {
+        "location": "google-analytics-for-wordpress",
+        "version": null,
+        "force": false,
+        "activate": true,
+        "activate_network": false
+      },
+      {
+        "location": "wordpress-seo",
+        "version": null,
+        "force": false,
+        "activate": true,
+        "activate_network": false
+      },
+    ],
+    "options": [
+      "blogdescription::''",
+      "timezone_string::'America/New_York'"
+    ],
+    "defines": [
+      "WP_DEBUG::true"
+    ]
+  }
 }

@@ -1,0 +1,2 @@
+# Setup synced folder from Dropbox Projects so theme folders can be symlinked in to Vagrant box
+config.vm.synced_folder "~/Code", "/Users/mattbanks/Code", :owner => "www-data", :mount_options => [ "dmode=775", "fmode=774" ]

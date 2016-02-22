@@ -1,0 +1,93 @@
+{
+  "base": {
+    "themes": [
+      {
+        "location": "mattbanks/WordPress-Starter-Theme",
+        "activate": false
+      }
+    ],
+    "plugins": [
+      {
+        "location": "custom-field-suite",
+        "version": null,
+        "force": false,
+        "activate": true,
+        "activate_network": false
+      },
+      {
+        "location": "cfs-options-screens",
+        "version": null,
+        "force": false,
+        "activate": true,
+        "activate_network": false
+      },
+      {
+        "location": "google-analytics-for-wordpress",
+        "version": null,
+        "force": false,
+        "activate": true,
+        "activate_network": false
+      },
+      {
+        "location": "wordpress-seo",
+        "version": null,
+        "force": false,
+        "activate": true,
+        "activate_network": false
+      },
+    ],
+    "options": [
+      "blogdescription::''",
+      "timezone_string::'America/New_York'"
+    ],
+    "defines": [
+      "WP_DEBUG::true"
+    ]
+  },
+
+  "genesis": {
+    "themes": [
+      {
+        "location": "mattbanks/Genesis-Starter-Child-Theme",
+        "activate": false
+      }
+    ],
+    "plugins": [
+      {
+        "location": "custom-field-suite",
+        "version": null,
+        "force": false,
+        "activate": true,
+        "activate_network": false
+      },
+      {
+        "location": "cfs-options-screens",
+        "version": null,
+        "force": false,
+        "activate": true,
+        "activate_network": false
+      },
+      {
+        "location": "google-analytics-for-wordpress",
+        "version": null,
+        "force": false,
+        "activate": true,
+        "activate_network": false
+      },
+      {
+        "location": "wordpress-seo",
+        "version": null,
+        "force": false,
+        "activate": true,
+        "activate_network": false
+      },
+    ],
+    "options": [
+      "blogdescription::''",
+      "timezone_string::'America/New_York'"
+    ],
+    "defines": [
+      "WP_DEBUG::true"
+    ]
+  }
+}

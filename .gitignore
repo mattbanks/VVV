@@ -7,13 +7,13 @@
 /.vagrant
 
 # This is a file intended for hooking in a custom Vagrant configuration on up
-/Customfile
+# /Customfile
 
 # Allow for custom provisioning scripts that are not included with the repo
-/provision/provision-custom.sh
-/provision/provision-pre.sh
-/provision/provision-post.sh
-/provision/github.token
+# /provision/provision-custom.sh
+# /provision/provision-pre.sh
+# /provision/provision-post.sh
+# /provision/github.token
 
 # Ignore custom trigger scripts in config/homebin.
 /config/homebin/vagrant_up_custom
@@ -28,7 +28,7 @@
 /config/custom/*
 
 # Ignore a custom bash_prompt if it exists
-/config/bash_prompt
+# /config/bash_prompt
 
 # No need to share our mysql data with each other
 /database/data/*
